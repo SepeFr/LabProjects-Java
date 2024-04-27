@@ -1,4 +1,4 @@
-# Collections of Exerices From Java Lab. in Sapienza University 🤠
+# Collection of Exercises From Java Lab. in Sapienza University 🤠
 
 enjoy
 
