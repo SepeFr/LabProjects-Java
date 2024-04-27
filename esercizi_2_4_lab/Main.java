@@ -56,6 +56,7 @@ public class Main {
      */
 
     Supplier<Integer> es_2_4_4 = () -> (int) (new Random().nextInt());
+    System.out.println(es_2_4_4.get());
     /*
      * ^
      * | Mentall Illness :O
@@ -120,6 +121,11 @@ public class Main {
     System.out.println(sanity_check);
     System.out.println(sanity_check2);
 
-    boolean es2_4_7_prima = String::contains;
+    VerificaStringhe es2_4_7_seconda = (s1, s2) -> ((s1.length() > s2.length()) & !s1.endsWith(s2));
+    boolean sanity_check3 = es2_4_7_seconda.verifica("Mondo", "Ciao");
+    boolean sanity_check4 = es2_4_7_seconda.verifica("CiaoCiaoCiao", "Ciao");
+
+    System.out.println(sanity_check3);
+    System.out.println(sanity_check4);
   }
 }

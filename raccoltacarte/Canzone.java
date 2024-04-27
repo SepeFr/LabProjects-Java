@@ -28,17 +28,15 @@ public class Canzone implements Comparable<Canzone> {
   @Override
   public int compareTo(Canzone o) {
     int result = this.getName().compareTo(o.getName());
-    if (result == 0) {
-      return this.getAuthor().compareTo(o.getAuthor());
-    }
-    return result;
+    return result == 0 ? this.getAuthor().compareTo(o.getName()) : result;
   }
 
   @Override
   public int hashCode() {
-    int result = 17;
-    result = 31 * result + (this.name != null ? this.getName().hashCode() : 0);
-    result = 31 * result + (this.author != null ? this.getAuthor().hashCode() : 0);
+    int result = 17; // first prime number
+    int prime = 31;
+    result = prime * result + (this.name != null ? this.getName().hashCode() : 0);
+    result = prime * result + (this.author != null ? this.getAuthor().hashCode() : 0);
     return result;
   }
 
