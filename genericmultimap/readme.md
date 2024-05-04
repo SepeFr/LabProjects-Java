@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Questo Esercizio si può fare 10x meglio, sono troppo pigro per implementarlo fatto bene lol
+
 **Esercizio: MultiMappa Generica**
 
 Una MultiMappa è una mappa che può avere più valori associati alla stessa chiave.
